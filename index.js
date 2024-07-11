@@ -8,6 +8,10 @@ app.use(express.json());
 const filePath = './VYANSI_PV_dir/';
 const PORT = 6000;
 
+app.get('/',(req,res)=>{
+    res.send({message: "hello world"})
+})
+
 app.post('/store-file', (req, res) => {
     console.log("Indise store file")
   const { file, data } = req.body;
