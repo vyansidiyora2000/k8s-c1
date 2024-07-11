@@ -9,7 +9,7 @@ const filePath = './VYANSI_PV_dir/';
 const PORT = 6000;
 
 app.get('/',(req,res)=>{
-    res.send({message: "hello world"})
+    res.send({message: "sneh"})
 })
 
 app.post('/store-file', (req, res) => {
