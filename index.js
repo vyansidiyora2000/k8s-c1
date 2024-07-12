@@ -34,6 +34,8 @@ app.post('/calculate', async (req, res) => {
         return res.status(404).json({ file, error: 'File not found.' });
     }
 
+
+    
     try {
         console.log("Inside try in c1")
         const response = await axios.post("http://con2-service:7000/calculate", { file, product });
